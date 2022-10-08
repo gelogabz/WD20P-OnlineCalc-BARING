@@ -1,29 +1,25 @@
-/* Calculator */
-
 //arithmetic functions here
 function insert(num) {
-    let view = document.form.textview;
+    let view = document.form.ansField;
     view.value += num;
 }
 
-function arithmetic(val) {
-    let view = document.form.textview;
+function arithmetic(operation) {
+    let view = document.form.ansField;
     if (view.value != "") {
-        view.value += val;
+        view.value += operation;
     }
-    parseFloat(val.toFixed(2));
-    return val;
 }
 
 function zero() {
-    let view = document.form.textview;
+    let view = document.form.ansField;
     if (view.value != "") {
         view.value += "0";
     }
 }
 
 function equal() {
-    let ans = document.form.textview;
+    let ans = document.form.ansField;
     let eq = ans.value;
 
     if (eq) {
@@ -35,10 +31,10 @@ function equal() {
 }
 
 function clean() {
-    document.form.textview.value = "";
+    document.form.ansField.value = "";
 }
 
 function del() {
-    let del = document.form.textview.value;
-    document.form.textview.value = del.substring(0, del.length - 1);
+    let del = document.form.ansField.value;
+    document.form.ansField.value = del.substring(0, del.length - 1);
 }
