@@ -1,4 +1,3 @@
-/*  Calculator  */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,7 +27,7 @@ body {
 }
 
 /*how tf do i make it like a SciCal dude */
-.textview {
+.answerField {
     width: 90%;
     height: 90px;
     position: absolute;
